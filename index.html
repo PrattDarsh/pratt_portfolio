@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Prateek Darshan's portfolio</title>
+</head>
+<style>
+    body {
+        font-family: Poppins;
+    }
+
+    .round {
+        border-radius: 72px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+        background: black;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 20px;
+
+    }
+
+</style>
+
+<body class="bg-black overflow-x-hidden">
+
+
+
+
+    <section class="mt-12 px-4 md:px-12 grid md:grid-cols-3 gap-4" id="landing">
+        <div class="px-6 bg-gray-900 round py-12 px-4 md:col-span-2 text-white md:px-12 tile ">
+            <p class="uppercase text-gray-500  tracking-widest font-bold">What I do</p>
+            <p class="text-3xl md:text-6xl mt-12 leading-loose md:leading-relaxed max-w-4xl">I'm a <span
+                    class=" italic">freelancer</span>,
+                <span class=" italic"> front-end web developer</span> and a
+                <span class="italic">designer</span>.
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white h-8 float-right mt-12 animate-bounce"
+                viewBox="0 0 24 24">
+                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+            </svg>
+        </div>
+        <img src="images/pratt.jpg"
+            class="round transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out" alt="">
+    </section>
+
+    <section class="px-4 md:px-12 my-4">
+        <div class="grid md:grid-cols-2  gap-4">
+
+            <div class="grid grid-cols-2 gap-4">
+                <a class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile"
+                    href="#xp" class="h-full">
+                    <p class="text-2xl md:text-5xl text-gray-400 font-bold md:absolute bottom-2 left-8">Experience
+                    </p>
+                </a>
+                <a class="round bg-gray-900 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile"
+                    href="#skills">
+                    <p class="text-2xl md:text-5xl text-gray-400 font-bold md:absolute bottom-2 left-8">Skills
+                    </p>
+                </a>
+                <a class="round bg-green-300 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile"
+                    href="#testi">
+                    <p class="text-2xl md:text-5xl text-green-500 font-bold md:absolute bottom-2 left-8">Testimonials
+                    </p>
+                </a>
+                <a class="round bg-yellow-300 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile"
+                    href="#contact">
+                    <p class="text-2xl md:text-5xl text-yellow-500 font-bold md:absolute bottom-2 left-8">Contact
+                    </p>
+                </a>
+            </div>
+            <a href="#projects" class="">
+                <div
+                    class="md:relative  round bg-purple-400  px-12 py-4 md:py-56 transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out">
+
+                    <p class="text-2xl md:text-9xl text-purple-500 font-bold md:absolute bottom-4">Projects</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="relative mt-4 px-4 md:px-12" id="xp">
+        <div class="bg-gray-900 px-4  round text-center  text-2xl py-12 ">
+            <p class="text-3xl md:text-8xl font-bold text-purple-600 md:text-gray-700 md:absolute top-0 right-20">
+                Experience
+            </p>
+            <div class="flex items-center justify-center text-white mt-12 space-x-4 md:space-x-12">
+                <div class="">
+                    <p>Oct 2020 to <br> Jan 2021</p>
+                    <p class="my-32">2021 to <br>Present</p>
+                    <p class="my-32">2021 to <br>Present</p>
+                    <p class="my-32">Jun 2022 to <br>Jul 2022 <br></p>
+                </div>
+                <div class="w-2 rounded-full h-screen bg-purple-600 "></div>
+                <div class="">
+                    <div class="text-left">
+                        <p>Zysk Technologies</p>
+                        <p class="text-gray-500 italic">Intern</p>
+                    </div>
+                    <div class="text-left my-32">
+                        <p>Freelance</p>
+                    </div>
+                    <div class="text-left my-32">
+                        <p>Yugen Education <br>Foundation</p>
+                        <p class="text-gray-500 italic">Website Maintainance</p>
+                    </div>
+                    <div class="text-left my-32">
+                        <p>Betsol</p>
+                        <p class="text-gray-500 italic">Software Developer Intern</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="mt-4 px-4 md:px-12" id="skills">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/html.svg" class="h-32 fill-current" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/css.svg" class="h-32" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/js.svg" class="h-32" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/tailwind.svg" class="h-32" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/bootstrap.svg" class="h-32" alt="">
+            </div>
+            <div class="text-white bg-green-300 round relative order-first md:order-none md:col-span-2">
+                <p
+                    class="absolute bottom-12 right-6 pl-2 md:pl-0 text-green-500 text-3xl md:text-8xl font-bold md:bottom-0 md:right-12">
+                    Skills
+                    and
+                    tools
+                </p>
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/node.svg" class="h-32" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/python.svg" class="h-32" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/react.svg" class="h-32" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/shopify.svg" class="h-32" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/illustrator.svg" class="h-32" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/wordpress.svg" class="h-32" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/xd.svg" class="h-32" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/Expressjs.png" class="" alt="">
+            </div>
+            <div
+                class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile">
+                <img src="images/logos/mongo.png" class="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class=" mt-6 grid grid-cols-1 md:grid-cols-2 gap-4  sec4 px-4 md:px-12 " id="projects">
+        <div class="bg-gray-900 text-white px-16 text-pink-400 py-20 round left ">
+            <p class="uppercase text-gray-500  tracking-widest font-bold">Project</p>
+            <p class="text-4xl font-bold mt-12 ">Meenakshi Babu</p>
+            <p class="max-w-lg mt-4 text-lg">An animated portfolio website that embodies Meenakshi
+                Babu focussing mainly on animations</p>
+            <a href="https://meenakshibabu.com/" target="_blank"><svg
+                    class="h-16 fill-current text-pink-400 mt-12 hover:text-white transition delay-45"
+                    clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12.012 1.995c-5.518 0-9.998 4.48-9.998 9.998s4.48 9.998 9.998 9.998 9.997-4.48 9.997-9.998-4.479-9.998-9.997-9.998zm0 1.5c4.69 0 8.497 3.808 8.497 8.498s-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498 3.808-8.498 8.498-8.498zm1.528 4.715s1.502 1.505 3.255 3.259c.146.147.219.339.219.531s-.073.383-.219.53c-1.753 1.754-3.254 3.258-3.254 3.258-.145.145-.336.217-.527.217-.191-.001-.383-.074-.53-.221-.293-.293-.295-.766-.004-1.057l1.978-1.977h-6.694c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.694l-1.979-1.979c-.289-.289-.286-.762.006-1.054.147-.147.339-.221.531-.222.19 0 .38.071.524.215z"
+                        fill-rule="nonzero" />
+                </svg></a>
+        </div>
+        <div
+            class="round right bg-pink-300 text-pink-600 flex items-center justify-center w-full text-4xl  round py-32">
+            <div class="leading-loose">
+                <p>It's not a website,</p>
+                <p class="font-bold text-5xl">but an experience.</p>
+            </div>
+        </div>
+        <div class="bg-gray-900 text-white px-16 text-green-400 py-20 round left ">
+            <p class="uppercase text-gray-500  tracking-widest font-bold">Project</p>
+            <p class="text-4xl font-bold mt-12 ">Yugen</p>
+            <p class="max-w-lg mt-4 text-lg">A lively site designed for Yugen, an NGO that aims at
+                educating teachers, thereby imparting education to rural areas.</p>
+            <a href="https://yugencommunity.netlify.app/" target="_blank"><svg
+                    class="h-16 fill-current text-green-400 mt-12 hover:text-white transition delay-45"
+                    clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12.012 1.995c-5.518 0-9.998 4.48-9.998 9.998s4.48 9.998 9.998 9.998 9.997-4.48 9.997-9.998-4.479-9.998-9.997-9.998zm0 1.5c4.69 0 8.497 3.808 8.497 8.498s-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498 3.808-8.498 8.498-8.498zm1.528 4.715s1.502 1.505 3.255 3.259c.146.147.219.339.219.531s-.073.383-.219.53c-1.753 1.754-3.254 3.258-3.254 3.258-.145.145-.336.217-.527.217-.191-.001-.383-.074-.53-.221-.293-.293-.295-.766-.004-1.057l1.978-1.977h-6.694c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.694l-1.979-1.979c-.289-.289-.286-.762.006-1.054.147-.147.339-.221.531-.222.19 0 .38.071.524.215z"
+                        fill-rule="nonzero" />
+                </svg></a>
+        </div>
+        <div
+            class="round right bg-green-300 text-green-600 flex items-center justify-center w-full text-4xl  round py-32">
+            <div class="leading-loose">
+                <p>Creating equitable, innovative & life-long</p>
+                <p class="font-bold text-5xl">learning communities.</p>
+            </div>
+        </div>
+        <div class="bg-gray-900 round left text-yellow-500  px-16 py-20">
+            <p class="uppercase text-gray-500  tracking-widest font-bold">Project</p>
+            <p class="text-4xl font-bold mt-12 ">Terrabarn</p>
+            <p class="max-w-lg mt-4 text-lg">A website to showcase the various products of Terrabarn, a
+                handmade terracotta jewellery making company. </p>
+            <a href="https://terrabarn.art/" target="_blank"><svg
+                    class="h-16 fill-current text-yellow-500 mt-12 hover:text-white transition delay-45"
+                    clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12.012 1.995c-5.518 0-9.998 4.48-9.998 9.998s4.48 9.998 9.998 9.998 9.997-4.48 9.997-9.998-4.479-9.998-9.997-9.998zm0 1.5c4.69 0 8.497 3.808 8.497 8.498s-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498 3.808-8.498 8.498-8.498zm1.528 4.715s1.502 1.505 3.255 3.259c.146.147.219.339.219.531s-.073.383-.219.53c-1.753 1.754-3.254 3.258-3.254 3.258-.145.145-.336.217-.527.217-.191-.001-.383-.074-.53-.221-.293-.293-.295-.766-.004-1.057l1.978-1.977h-6.694c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.694l-1.979-1.979c-.289-.289-.286-.762.006-1.054.147-.147.339-.221.531-.222.19 0 .38.071.524.215z"
+                        fill-rule="nonzero" />
+                </svg></a>
+        </div>
+        <div
+            class="round right bg-yellow-300 text-yellow-700 flex items-center justify-center w-full text-4xl  round py-32">
+            <div class="leading-loose">
+                <p>Jewellery with the</p>
+                <p class="font-bold text-5xl">warmth of the earth.</p>
+            </div>
+        </div>
+        <div class="bg-gray-900 text-white px-16 py-20 round left text-indigo-400">
+            <p class="uppercase text-gray-500  tracking-widest font-bold">Project</p>
+            <p class="text-4xl font-bold mt-12 ">Babu Vittal</p>
+            <p class="max-w-lg mt-4 text-lg">A portfolio website that showcases the experience and skills
+                of Babu Vittal.</p>
+            <a href="https://babuvittal.com/" target="_blank"><svg
+                    class="h-16 fill-current text-indigo-400 mt-12 hover:text-white transition delay-45"
+                    clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12.012 1.995c-5.518 0-9.998 4.48-9.998 9.998s4.48 9.998 9.998 9.998 9.997-4.48 9.997-9.998-4.479-9.998-9.997-9.998zm0 1.5c4.69 0 8.497 3.808 8.497 8.498s-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498 3.808-8.498 8.498-8.498zm1.528 4.715s1.502 1.505 3.255 3.259c.146.147.219.339.219.531s-.073.383-.219.53c-1.753 1.754-3.254 3.258-3.254 3.258-.145.145-.336.217-.527.217-.191-.001-.383-.074-.53-.221-.293-.293-.295-.766-.004-1.057l1.978-1.977h-6.694c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.694l-1.979-1.979c-.289-.289-.286-.762.006-1.054.147-.147.339-.221.531-.222.19 0 .38.071.524.215z"
+                        fill-rule="nonzero" />
+                </svg></a>
+        </div>
+        <div
+            class="round right bg-indigo-300 text-indigo-800 flex items-center justify-center w-full text-4xl  round py-32">
+            <div class="leading-loose">
+                <p>The pinnacle of</p>
+                <p class="font-bold text-5xl">Simplicity.</p>
+            </div>
+        </div>
+        <div class="bg-gray-900 round left text-gray-200  px-16 py-20">
+            <p class="uppercase text-gray-500  tracking-widest font-bold">Project</p>
+            <p class="text-4xl font-bold mt-12 ">Podcasts</p>
+            <p class="max-w-lg mt-4 text-lg">A website that serves users podcasts according to a lesson plan. Developed
+                to aid teachers in their learning.</p>
+            <a href="https://github.com/PrattDarsh/podcasts" target="_blank"><svg
+                    class="h-16 fill-current text-gray-200 mt-12 hover:text-white transition delay-45"
+                    clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12.012 1.995c-5.518 0-9.998 4.48-9.998 9.998s4.48 9.998 9.998 9.998 9.997-4.48 9.997-9.998-4.479-9.998-9.997-9.998zm0 1.5c4.69 0 8.497 3.808 8.497 8.498s-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498 3.808-8.498 8.498-8.498zm1.528 4.715s1.502 1.505 3.255 3.259c.146.147.219.339.219.531s-.073.383-.219.53c-1.753 1.754-3.254 3.258-3.254 3.258-.145.145-.336.217-.527.217-.191-.001-.383-.074-.53-.221-.293-.293-.295-.766-.004-1.057l1.978-1.977h-6.694c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.694l-1.979-1.979c-.289-.289-.286-.762.006-1.054.147-.147.339-.221.531-.222.19 0 .38.071.524.215z"
+                        fill-rule="nonzero" />
+                </svg></a>
+        </div>
+        <div class="round right bg-gray-200  flex items-center justify-center w-full text-4xl  round py-32">
+            <div class="leading-loose">
+                <p>My first true</p>
+                <p class="font-bold text-5xl"> fullstack attempt.</p>
+            </div>
+        </div>
+
+        <div class="bg-gray-900 round left text-purple-400  px-16 py-20">
+            <p class="uppercase text-gray-500  tracking-widest font-bold">Project</p>
+            <p class="text-4xl font-bold mt-12 ">ClassMeet</p>
+            <p class="max-w-lg mt-4 text-lg">A site that takes you to the right class(Zoom/ Gmeet link) at the right
+                time. </p>
+            <a href="https://youhaveclass.netlify.app/" target="_blank"><svg
+                    class="h-16 fill-current text-purple-400 mt-12 hover:text-white transition delay-45"
+                    clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12.012 1.995c-5.518 0-9.998 4.48-9.998 9.998s4.48 9.998 9.998 9.998 9.997-4.48 9.997-9.998-4.479-9.998-9.997-9.998zm0 1.5c4.69 0 8.497 3.808 8.497 8.498s-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498 3.808-8.498 8.498-8.498zm1.528 4.715s1.502 1.505 3.255 3.259c.146.147.219.339.219.531s-.073.383-.219.53c-1.753 1.754-3.254 3.258-3.254 3.258-.145.145-.336.217-.527.217-.191-.001-.383-.074-.53-.221-.293-.293-.295-.766-.004-1.057l1.978-1.977h-6.694c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.694l-1.979-1.979c-.289-.289-.286-.762.006-1.054.147-.147.339-.221.531-.222.19 0 .38.071.524.215z"
+                        fill-rule="nonzero" />
+                </svg></a>
+        </div>
+        <div
+            class="round right bg-purple-400 text-purple-600 flex items-center justify-center w-full text-4xl  round py-32">
+            <div class="leading-loose">
+                <p>Too many links?</p>
+                <p class="font-bold text-5xl"> One solution.</p>
+            </div>
+        </div>
+
+        <div class="bg-gray-900 round left text-red-400  px-16 py-20">
+            <p class="uppercase text-gray-500  tracking-widest font-bold">Project</p>
+            <p class="text-4xl font-bold mt-12 ">Grades by Karthik</p>
+            <p class="max-w-lg mt-4 text-lg">A site that takes you to the right class(Zoom/ Gmeet link) at the right
+                time. </p>
+            <a href="https://gradesbykarthik.netlify.app/" target="_blank"><svg
+                    class="h-16 fill-current text-red-400 mt-12 hover:text-white transition delay-45"
+                    clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12.012 1.995c-5.518 0-9.998 4.48-9.998 9.998s4.48 9.998 9.998 9.998 9.997-4.48 9.997-9.998-4.479-9.998-9.997-9.998zm0 1.5c4.69 0 8.497 3.808 8.497 8.498s-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498 3.808-8.498 8.498-8.498zm1.528 4.715s1.502 1.505 3.255 3.259c.146.147.219.339.219.531s-.073.383-.219.53c-1.753 1.754-3.254 3.258-3.254 3.258-.145.145-.336.217-.527.217-.191-.001-.383-.074-.53-.221-.293-.293-.295-.766-.004-1.057l1.978-1.977h-6.694c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.694l-1.979-1.979c-.289-.289-.286-.762.006-1.054.147-.147.339-.221.531-.222.19 0 .38.071.524.215z"
+                        fill-rule="nonzero" />
+                </svg></a>
+        </div>
+        <div class="round right bg-red-400 text-red-200 flex items-center justify-center w-full text-4xl  round py-32">
+            <div class="leading-loose">
+                <p>Coloring</p>
+                <p class="font-bold text-5xl">the colorist.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="px-4 md:px-12 my-4" id="testi">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="round border-2 border-yellow-400 md:relative">
+                <p
+                    class="text-2xl md:text-7xl text-center md:text-right text-yellow-400 font-bold md:absolute right-12 bottom-0">
+                    Testi-<br>monials
+                </p>
+            </div>
+            <div class="md:col-span-2 bg-gray-900 round text-white px-12 py-20 text-lg relative ">
+                <div class="max-w-4xl mx-auto">
+                    <p class="">The website is
+                        very easy to navigate, and the content has been placed very well. The logos are very catchy
+                        and classy too. It is fun, engaging and the audience I showed it to loved it and asked for your
+                        name - for a designer, this feedback is what I believe gives joy.</p>
+                    <p class="mt-12 text-right text-2xl font-bold">Meenakshi Babu</p>
+                    <p class="text-right text-yellow-400">Founder, Yugen</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute bottom-6 md:bottom-0 left-12 h-16 md:h-32 text-white transform rotate-180 opacity-50 fill-current "
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+            </div>
+            <div class="md:row-span-2 bg-gray-900 round text-white px-12 py-20 text-lg relative">
+                <div class=" max-w-4xl mx-auto">
+                    <p class=""> The website has come out professionally and has been appreciated by those who have
+                        reached out
+                        to me through the website so far. I particularly like the elements that have kept my identity
+                        visible and clear. The content is accurate, clear, and concise. The navigation is simple and it
+                        offers visible coordinates to contact me.</p>
+                    <p class="mt-12 text-right text-2xl font-bold">Babu Vittal</p>
+                    <p class="text-right text-yellow-400">Start-up HR | Ula | Vedantu | Flipkart </p>
+
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute bottom-0 right-12 h-16 md:h-32 text-yellow-400 transform rotate-180 opacity-50 fill-current "
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+            </div>
+            <div class="md:col-span-3 bg-gray-900 round text-white px-12 py-20 text-lg relative">
+                <div class="max-w-4xl mx-auto">
+                    <p class=""> Prateek has been exceptionally good at developing our website, starting with
+                        understanding
+                        our needs effectively, ensuring seamless communication for managing exigencies, to
+                        delivering on time. We were absolutely thrilled with both the effort and the result we
+                        received from Prateek.</p>
+                    <p class="mt-6">
+                        He worked patiently throughout, making the process look easy and convenient. He listened,
+                        responded and delivered just what we needed. If you are looking for someone to help you
+                        with your website development, he should be the one you pick.</p>
+                    <p class="mt-12 text-right text-2xl font-bold">Yugen Educational Foundation</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute left-12 top-2 md:top-12 transform h-16  md:h-32 text-yellow-400 transform  opacity-50 fill-current "
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="px-4 md:px-12 my-4" id="contact">
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="relative  round bg-purple-400  px-12 py-56">
+                <!-- <p class="text-4xl text-purple-700">Have a project in mind?</p> -->
+                <p class="text-8xl md:text-9xl text-purple-500 font-bold absolute bottom-0">Get in touch!</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a class="round bg-gray-200 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile"
+                    target="_blank" href="https://github.com/PrattDarsh" class="h-full">
+                    <div><svg class="fill-current text-black h-8 md:h-12" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </div>
+                </a>
+                <a class="round bg-gray-900 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile"
+                    href="mailto:prateekdarshan2001@gmail.com" target="_blank">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white h-8 md:h-12 mx-auto"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M.026 24l11.974-11.607 11.974 11.607h-23.948zm11.964-23.961l-11.99 8.725v12.476l7.352-7.127-5.653-4.113 10.291-7.488 10.309 7.488-5.655 4.108 7.356 7.132v-12.476l-12.01-8.725z" />
+                        </svg>
+                    </div>
+                </a>
+                <a class="round bg-green-300 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile"
+                    href="tel:9449358959">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white h-8 md:h-12 mx-auto"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M6.176 1.322l2.844-1.322 4.041 7.89-2.724 1.341c-.538 1.259 2.159 6.289 3.297 6.372.09-.058 2.671-1.328 2.671-1.328l4.11 7.932s-2.764 1.354-2.854 1.396c-7.862 3.591-19.103-18.258-11.385-22.281zm1.929 1.274l-1.023.504c-5.294 2.762 4.177 21.185 9.648 18.686l.971-.474-2.271-4.383-1.026.5c-3.163 1.547-8.262-8.219-5.055-9.938l1.007-.497-2.251-4.398z" />
+                        </svg>
+                    </div>
+                </a>
+                <a target="_blank"
+                    class="round bg-yellow-300 text-white p-8 md:p-12 flex items-center justify-center transition transform hover:-translate-y-1 delay-45 hover:scale-95 ease-in-out tile"
+                    href="https://www.linkedin.com/in/prateek-darshan/">
+                    <div>
+                        <svg class="fill-current text-white h-8 md:h-12 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="text-white py-12 text-lg px-4 md:px-12 text-center  space-y-6 md:flex justify-between items-center">
+        <div class=""><a href="#landing">Back to top</a> </div>
+        <div class="">&copy;2022. All rights reserved.</div>
+        <div class="">Designed by<br><span class="text-2xl font-bold">Prateek</span> </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script>
+
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.sec4',
+                toggleActions: 'play none none pause',
+                scrub: 1,
+                start: 'top bottom'
+            }
+        }
+
+        )
+
+
+
+
+
+
+        if (!isMobile) {
+            tl.from('.left', { x: 200, stagger: 0.1, })
+                .from('.right', { x: -200, stagger: 0.1 }, '-=1')
+
+
+        } else {
+            tl.from('.left', { y: 200, stagger: 0.1, })
+                .from('.right', { y: -200, stagger: 0.1 }, '-=1')
+
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
