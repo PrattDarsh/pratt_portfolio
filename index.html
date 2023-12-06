@@ -1,435 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Smooch&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet" />
 
     <title>Prateek Darshan's portfolio</title>
-  </head>
-  <style>
+</head>
+<style>
     @font-face {
-      font-family: bigFont;
-      src: url(Druk-Wide-Bold.ttf);
+        font-family: bigFont;
+        src: url(Druk-Wide-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: pixel;
+        src: url(SUPERSCR.TTF);
     }
 
     body {
-      font-family: Poppins;
+        font-family: Poppins;
     }
 
     .bigBoy {
-      font-family: bigFont;
+        font-family: bigFont;
     }
 
     .round {
-      border-radius: 72px;
+        border-radius: 72px;
     }
 
     ::-webkit-scrollbar {
-      width: 8px;
-      background: black;
+        width: 8px;
+        background: black;
     }
 
     ::-webkit-scrollbar-thumb {
-      background: white;
-      border-radius: 20px;
+        background: white;
+        border-radius: 20px;
     }
 
     .title {
-      font-family: "Bebas Neue", sans-serif;
+        font-family: "Bebas Neue", sans-serif;
     }
 
     .cursive {
-      font-family: "Smooch", cursive;
+        font-family: "Smooch", cursive;
     }
-  </style>
 
-  <body
-    class="bg-yellow-400 overflow-x-hidden bigBoy transition duration-300 ease-in-out"
-    id="slate"
-  >
-    <section class="py-56 px-24 flex items-center justify-center" id="landing">
-      <div class="relative text-right">
-        <h1 class="text-5xl landing leading-relaxed tracking-widest cursive">
-          Hey I'm Pratt
-        </h1>
-        <p class="text-6xl landing uppercase">Picasso of Pixels</p>
-        <p class="text-6xl landing uppercase">and Sultan of Serifs</p>
-      </div>
+</style>
+
+<body class="bg-yellow-400 overflow-x-hidden bigBoy transition duration-300 ease-in-out" id="slate">
+    <section class="py-56 px-4 md:px-24 flex items-center justify-end" id="landing">
+        <div class="relative text-right max-w-7xl">
+            <h1 class="text-2xl md:text-5xl landing leading-relaxed tracking-widest cursive pixel">
+                Hey I'm Pratt
+            </h1>
+            <p class="text-5xl md:text-7xl landing uppercase">Picasso of Pixels</p>
+            <p class="text-5xl md:text-7xl landing uppercase">and Sultan of Serifs</p>
+        </div>
     </section>
 
-    <div class="flex justify-end px-24" id="pacman1">
-      <div class="space-y-32">
-        <img
-          src="images/pacman.png"
-          class="transform rotate-90"
-          id="landingPacman"
-          alt=""
-        />
-        <div class="p-1 w-1 mx-auto rounded-full bg-black dot1"></div>
-        <div class="p-1 w-1 mx-auto rounded-full bg-black dot1"></div>
-        <div class="p-1 w-1 mx-auto rounded-full bg-black dot1"></div>
-        <img src="images/ghost.png" class="aboutPacman dot1" alt="" />
-      </div>
+    <div class="flex justify-end px-4 md:px-24" id="pacman1">
+        <div class="space-y-32">
+            <img src="images/pacman.png" class="transform rotate-90" id="landingPacman" alt="" />
+            <div class="p-1 w-1 mx-auto rounded-full bg-black dot1"></div>
+            <div class="p-1 w-1 mx-auto rounded-full bg-black dot1"></div>
+            <div class="p-1 w-1 mx-auto rounded-full bg-black dot1"></div>
+            <img src="images/ghost.png" class="aboutPacman dot1" alt="" />
+        </div>
     </div>
 
-    <section class="py-56 px-24 flex items-center justify-end">
-      <div
-        class="relative text-right transition duration-700 ease-in-out"
-        id="aboutText"
-      >
-        <p class="leading-relaxed tracking-widest text-6xl cursive about">
-          About me
-        </p>
-        <p class="text-6xl uppercase about">I design websites</p>
-        <p class="text-6xl uppercase about">during the day and</p>
-        <p class="text-6xl uppercase about">posters by night.</p>
-      </div>
+    <section class="py-56 px-4 md:px-24 flex items-center justify-end">
+        <div class="relative text-right transition duration-700 ease-in-out" id="aboutText">
+            <p class="leading-relaxed tracking-widest text-2xl md:text-5xl cursive about">
+                About me
+            </p>
+            <p class="text-5xl md:text-7xl uppercase about">I design websites</p>
+            <p class="text-5xl md:text-7xl uppercase about">during the day and</p>
+            <p class="text-5xl md:text-7xl uppercase about">posters by night.</p>
+        </div>
     </section>
 
     <!-- ---------------------------------------------DINOSAUR------------------------------------------ -->
-    <section class="px-24 py-32">
-      <div class="flex justify-between" id="aboutDinoGame">
-        <img src="images/dino_yellow-01.svg" class="h-32 saneDino" alt="" />
-        <div class="flex">
-          <img src="images/saneCactus1-02.svg" class="h-32" alt="" />
-          <img src="images/saneCactus2-02.svg" class="h-32" alt="" />
+    <section class="px-4 md:px-24 py-32">
+        <div class="flex justify-between" id="aboutDinoGame">
+            <img src="images/dino_yellow-01.svg" class="h-20 md:h-32 saneDino" alt="" />
+            <div class="flex">
+                <img src="images/saneCactus1-02.svg" class="h-20 md:h-32 " alt="" />
+                <img src="images/saneCactus2-02.svg" class="h-20 md:h-32" alt="" />
+            </div>
         </div>
-      </div>
 
-      <div class="h-px w-full bg-yellow-400"></div>
+        <div class="h-px w-full bg-yellow-400"></div>
     </section>
     <!-- ---------------------------------------------DINOSAUR------------------------------------------ -->
 
-    <section class="py-72 px-24 flex items-center justify-center" id="projects">
-      <div class="relative text-right">
-        <p
-          class="leading-relaxed tracking-widest bigBoy text-5xl cursive project"
-        >
-          Projects
-        </p>
-        <a href="" class="">
-          <p class="text-6xl uppercase project">BABU VITTAL</p>
-        </a>
-        <div class="my-8 flex justify-end">
-          <div class="p-1 w-1 rounded-full bg-black"></div>
-        </div>
-        <a href="">
-          <p class="text-6xl uppercase project">Meenakshi Babu</p>
-        </a>
+    <section class="py-72 px-4 md:px-24 flex items-center justify-end" id="projects">
+        <div class="relative text-right">
+            <p class="leading-relaxed tracking-widest bigBoy text-2xl md:text-5xl cursive project">
+                Projects
+            </p>
+            <a href="" class="hover:text-white transition duration-300">
+                <p class="text-4xl md:text-7xl uppercase project">BABU VITTAL</p>
+            </a>
+            <div class="my-8 flex justify-end">
+                <div class="p-1 w-1 rounded-full bg-black"></div>
+            </div>
+            <a href="" class="hover:text-white transition duration-300">
+                <p class="text-4xl md:text-7xl uppercase project">Meenakshi Babu</p>
+            </a>
 
-        <div class="my-8 flex justify-end">
-          <div class="p-1 w-1 rounded-full bg-black"></div>
-        </div>
+            <div class="my-8 flex justify-end">
+                <div class="p-1 w-1 rounded-full bg-black"></div>
+            </div>
 
-        <a href="">
-          <p class="text-6xl uppercase project">Yugen Education Foundation</p>
-        </a>
+            <a href="" class="hover:text-white transition duration-300">
+                <p class="text-4xl md:text-7xl uppercase project">Yugen Education Foundation</p>
+            </a>
 
-        <div class="my-8 flex justify-end">
-          <div class="p-1 w-1 rounded-full bg-black"></div>
+            <div class="my-8 flex justify-end">
+                <div class="p-1 w-1 rounded-full bg-black"></div>
+            </div>
+            <a href="" class="hover:text-white transition duration-300">
+                <p class="text-4xl md:text-7xl uppercase project">Terrabarn</p>
+            </a>
+            <div class="my-8 flex justify-end">
+                <div class="p-1 w-1 rounded-full bg-black"></div>
+            </div>
+            <a href="" class="hover:text-white transition duration-300">
+                <p class="text-4xl md:text-7xl uppercase project">Podcasts</p>
+            </a>
+            <div class="my-8 flex justify-end">
+                <div class="p-1 w-1 rounded-full bg-black"></div>
+            </div>
+            <a href="" class="hover:text-white transition duration-300">
+                <p class="text-4xl md:text-7xl uppercase project">Classmeets</p>
+            </a>
+            <div class="my-8 flex justify-end">
+                <div class="p-1 w-1 rounded-full bg-black"></div>
+            </div>
+            <a href="" class="hover:text-white transition duration-300">
+                <p class="text-4xl md:text-7xl uppercase project">JourneyIn</p>
+            </a>
         </div>
-        <a href="">
-          <p class="text-6xl uppercase project">Terrabarn</p>
-        </a>
-        <div class="my-8 flex justify-end">
-          <div class="p-1 w-1 rounded-full bg-black"></div>
-        </div>
-        <a href="">
-          <p class="text-6xl uppercase project">Podcasts</p>
-        </a>
-        <div class="my-8 flex justify-end">
-          <div class="p-1 w-1 rounded-full bg-black"></div>
-        </div>
-        <a href="">
-          <p class="text-6xl uppercase project">Classmeets</p>
-        </a>
-        <div class="my-8 flex justify-end">
-          <div class="p-1 w-1 rounded-full bg-black"></div>
-        </div>
-        <a href="">
-          <p class="text-6xl uppercase project">JourneyIn</p>
-        </a>
-      </div>
     </section>
 
-    <div class="flex justify-end px-24">
-      <div class="space-y-32">
-        <img src="images/pacman.png" class="transform rotate-90" alt="" />
-        <div class="p-1 w-1 mx-auto rounded-full bg-black"></div>
-        <div class="p-1 w-1 mx-auto rounded-full bg-black"></div>
-        <div class="p-1 w-1 mx-auto rounded-full bg-black"></div>
-        <div class="p-1 w-1 mx-auto rounded-full bg-black"></div>
-      </div>
+
+    <!-- ----------------------------------------------------PSYCH PACMAN------------------------------- -->
+
+    <div class="flex justify-end px-4 md:px-24" id="psychPacman">
+        <div class="space-y-32">
+            <img src="images/ghost.png" class="transform rotate-90 sikePacman" alt="" />
+            <div class="p-1 w-1 mx-auto rounded-full bg-black dot2"></div>
+            <img src="images/pacman.png" class="transform rotate-90 sikePacman" alt="">
+            <div class="p-1 w-1 mx-auto rounded-full bg-black dot2"></div>
+            <div class="p-1 w-1 mx-auto rounded-full bg-black dot2"></div>
+        </div>
     </div>
+    <!-- ----------------------------------------------------PSYCH PACMAN------------------------------- -->
 
-    <section class="py-56 px-24">
-      <div class="text-right">
-        <p class="leading-relaxed tracking-widest text-5xl cursive">
-          What they had to say
-        </p>
-        <p class="text-6xl uppercase">
-          He listened, responded and delivered just what we needed.
-        </p>
-        <div class="mt-6 flex justify-end">
-          <p
-            class="uppercase bg-black text-white py-2 px-4 max-w-lg text-center"
-          >
-            Yugen Education Foundation
-          </p>
+    <section class="py-72 px-4 md:px-24" id="testimonials">
+        <div class="text-right">
+            <p class="leading-relaxed tracking-widest text-2xl md:text-5xl cursive">
+                What they had to say
+            </p>
+            <p class="text-4xl md:text-7xl uppercase testimonial">
+                He listened, responded and delivered just what we needed.
+            </p>
+            <div class="mt-6 flex justify-end">
+                <p class="uppercase bg-black text-white py-2 px-4 max-w-lg text-center testimonial">
+                    Yugen Education Foundation
+                </p>
+            </div>
+            <p class="uppercase mt-2 testimonial">
+                a social enterprise that works for improving<br />
+                the quality of education in rural India.
+            </p>
         </div>
-        <p class="uppercase mt-2">
-          a social enterprise that works for improving<br />
-          the quality of education in rural India.
-        </p>
-      </div>
 
-      <div class="my-12 flex justify-end">
-        <div class="p-1 w-1 rounded-full bg-black"></div>
-      </div>
-      <div class="my-12 flex justify-end">
-        <div class="p-1 w-1 rounded-full bg-black"></div>
-      </div>
-
-      <div class="text-right">
-        <p class="text-6xl uppercase">
-          It is fun, engaging and the audience I showed it to loved it and asked
-          for your name
-        </p>
-        <div class="mt-6 flex justify-end">
-          <p
-            class="uppercase bg-black text-white py-2 px-4 max-w-lg text-center"
-          >
-            Meenakshi Babu
-          </p>
+        <div class="my-12 flex justify-end">
+            <div class="p-1 w-1 rounded-full bg-black"></div>
         </div>
-        <p class="uppercase mt-2">
-          Founder and Director,<br />
-          Yugen Education Foundation
-        </p>
-      </div>
-
-      <div class="my-12 flex justify-end">
-        <div class="p-1 w-1 rounded-full bg-black"></div>
-      </div>
-      <div class="my-12 flex justify-end">
-        <div class="p-1 w-1 rounded-full bg-black"></div>
-      </div>
-
-      <div class="text-right">
-        <p class="text-6xl uppercase">
-          The content is accurate, clear, and concise. The navigation is simple
-          and it offers visible coordinates to contact me.
-        </p>
-        <div class="mt-6 flex justify-end">
-          <p
-            class="uppercase bg-black text-white py-2 px-4 max-w-lg text-center"
-          >
-            Babu Vittal
-          </p>
+        <div class="my-12 flex justify-end">
+            <div class="p-1 w-1 rounded-full bg-black"></div>
         </div>
-        <p class="uppercase mt-2">
-          RTP Global | Ula | Vedantu | Flipkart <br />
-          Stanford | XLRI | People
-        </p>
-      </div>
+
+        <div class="text-right">
+            <p class="text-4xl md:text-7xl uppercase testimonial">
+                It is fun, engaging and the audience I showed it to loved it and asked
+                for your name
+            </p>
+            <div class="mt-6 flex justify-end">
+                <p class="uppercase bg-black text-white py-2 px-4 max-w-lg text-center testimonial">
+                    Meenakshi Babu
+                </p>
+            </div>
+            <p class="uppercase mt-2 testimonial">
+                Founder and Director,<br />
+                Yugen Education Foundation
+            </p>
+        </div>
+
+        <div class="my-12 flex justify-end">
+            <div class="p-1 w-1 rounded-full bg-black"></div>
+        </div>
+        <div class="my-12 flex justify-end">
+            <div class="p-1 w-1 rounded-full bg-black"></div>
+        </div>
+
+        <div class="text-right">
+            <p class="text-4xl md:text-7xl uppercase testimonial">
+                The content is accurate, clear, and concise. The navigation is simple
+                and it offers visible coordinates to contact me.
+            </p>
+            <div class="mt-6 flex justify-end testimonial">
+                <p class="uppercase bg-black text-white py-2 px-4 max-w-lg text-center">
+                    Babu Vittal
+                </p>
+            </div>
+            <p class="uppercase mt-2 testimonial">
+                RTP Global | Ula | Vedantu | Flipkart <br />
+                Stanford | XLRI | People
+            </p>
+        </div>
     </section>
 
     <!-- ---------------------------------------------DINOSAUR------------------------------------------ -->
-    <section class="px-24 py-32" id="dinoGame">
-      <div class="flex space-x-32">
-        <div class="cactus flex">
-          <img src="images/cactus1-02.svg" class="h-32" alt="" />
-          <img src="images/cactus2-02.svg" class="h-32" alt="" />
+    <section class="px-4 md:px-24 py-32" id="dinoGame">
+        <div class="flex space-x-32">
+            <div class="cactus flex">
+                <img src="images/cactus1-02.svg" class="h-20 md:h-32" alt="" />
+                <img src="images/cactus2-02.svg" class="h-20 md:h-32" alt="" />
+            </div>
+            <img src="images/dino_yellow-01.svg" class="h-20 md:h-32 cactus" alt="" />
         </div>
-        <img src="images/dino_yellow-01.svg" class="h-32 cactus" alt="" />
-      </div>
 
-      <div class="h-px w-full bg-yellow-400"></div>
+        <div class="h-px w-full bg-yellow-400"></div>
     </section>
     <!-- ---------------------------------------------DINOSAUR------------------------------------------ -->
 
-    <section class="py-56 px-24 flex items-center justify-end">
-      <div class="relative text-right">
-        <p class="text-3xl leading-relaxed tracking-widest text-5xl cursive">
-          Let's connect
-        </p>
-        <a href="">
-          <p class="text-6xl uppercase">Linked In</p>
-        </a>
+    <section class="py-56 px-4 md:px-24 flex items-center justify-end" id="contactMe">
+        <div class="relative text-right">
+            <p class="text-3xl leading-relaxed tracking-widest text-2xl md:text-5xl cursive contact">
+                Let's connect
+            </p>
+            <a href="https://www.linkedin.com/in/prateek-darshan/" class="hover:text-white transition duration-300"
+                target="_blank">
+                <p class="text-4xl md:text-7xl uppercase contact">Linked In</p>
+            </a>
 
-        <a href="">
-          <p class="text-6xl uppercase">Github</p>
-        </a>
+            <a href="https://github.com/PrattDarsh" class="hover:text-white transition duration-300" target="_blank">
+                <p class="text-4xl md:text-7xl uppercase contact">Github</p>
+            </a>
 
-        <a href="">
-          <p class="text-6xl uppercase">Mail Me</p>
-        </a>
-      </div>
+            <a href="mailto:prateekdarshan2001@gmail.com" class="hover:text-white transition duration-300">
+                <p class="text-4xl md:text-7xl uppercase contact">Mail Me</p>
+            </a>
+        </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script>
-      function makeBlack() {
-        document
-          .getElementById("aboutText")
-          .classList.toggle("text-yellow-400");
-        document.getElementById("slate").classList.toggle("bg-yellow-400");
-        document.getElementById("slate").classList.toggle("bg-black");
-      }
+        function makeBlack() {
+            document
+                .getElementById("aboutText")
+                .classList.toggle("text-yellow-400");
 
-      // function makeYellow() {
-      //     // document.body.style.backgroundColor = "black";
-      //     // document.body.className += 'bg-black';
-      //     // document.getElementById('landingPacman').src = "pacman-yellow.png"
-      //     // document.getElementById('aboutText').classList.toggle('text-yellow-400')
-      //     document.getElementById('slate').classList.toggle('bg-yellow-400')
-      //     document.getElementById('slate').classList.toggle('bg-black')
-      // }
 
-      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            document.getElementById("slate").classList.toggle("bg-yellow-400");
+            document.getElementById("slate").classList.toggle("bg-black");
+            document.getElementById("slate").classList.toggle("text-yellow-400");
+        }
 
-      // -------------------------LANDING ANIMATION------------------------------
-      gsap.from(".landing", { x: -50, stagger: 0.1, opacity: 0 });
-      gsap.from("#landingPacman", { y: 30, opacity: 0, rotate: -45, scale: 0 });
+        // function makeYellow() {
+        //     // document.body.style.backgroundColor = "black";
+        //     // document.body.className += 'bg-black';
+        //     // document.getElementById('landingPacman').src = "pacman-yellow.png"
+        //     // document.getElementById('aboutText').classList.toggle('text-yellow-400')
+        //     document.getElementById('slate').classList.toggle('bg-yellow-400')
+        //     document.getElementById('slate').classList.toggle('bg-black')
+        // }
 
-      let landingPacmanAnim = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#pacman1",
-          toggleActions: "play none none pause",
-          scrub: 1,
-          start: "top center",
-          // pin: true
-        },
-      });
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-      landingPacmanAnim
-        .to(".dot1", { opacity: 0, stagger: 0.1 })
-        .to(
-          "#landingPacman",
-          {
-            y: 600,
-            duration: 2,
-          },
-          "-=2"
-        )
-        .to("#landingPacman", {
-          opacity: 0,
-          scale: 0,
-          onComplete: () => makeBlack(),
-          onReverseComplete: () => makeBlack(),
-        })
-        .from(".about", {
-          x: -50,
-          stagger: 0.1,
-          opacity: 0,
-          ease: "power4.inOut",
+        // -------------------------LANDING ANIMATION------------------------------
+        gsap.from(".landing", { x: -50, stagger: 0.1, opacity: 0 });
+        gsap.from("#landingPacman", { y: 30, opacity: 0, rotate: -45, scale: 0 });
+
+        let landingPacmanAnim = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#pacman1",
+                toggleActions: "play none none pause",
+                scrub: 1,
+                start: "top center",
+                // pin: true
+            },
         });
 
-      // -------------------------END LANDING ANIMATION------------------------------
+        landingPacmanAnim
+            .to(".dot1", { opacity: 0, stagger: 0.1, })
+            .to(
+                "#landingPacman",
+                {
+                    y: 600,
+                    duration: 2,
 
-      //-------------------------------ABOUT------------------------------------
-      let about = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#aboutDinoGame",
-          toggleActions: "play none none pause",
-          scrub: 1,
-          start: "top bottom",
-          // pin: true,
-        },
-      });
+                },
+                "-=2"
+            )
+            .to("#landingPacman", {
+                opacity: 0,
+                scale: 0,
 
-      about.from("#aboutDinoGame", { opacity: 0, scale: 0 }, "-=0.5").to(
-        ".saneDino",
-        {
-          x: 500,
-          duration: 1,
-          onComplete: () => makeBlack(),
-          //   onReverseComplete: () => makeBlack(),
-        },
-        "-=0.5"
-      );
-      // .from(".project", {
-      //   x: -50,
-      //   stagger: 0.1,
-      //   opacity: 0,
-      //   ease: "power4.inOut",
-      // });
-      //-------------------------------END ABOUT------------------------------------
 
-      //   ------------------------------PROJECTS-----------------------------------
-      let projects = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#projects",
-          toggleActions: "play none none pause",
-          scrub: 1,
-          start: "top bottom",
-          // pin: true,
-        },
-      });
+            })
+            .to('body', { backgroundColor: "black", color: "#fbbf24" })
+            .from(".about", {
+                x: -50,
+                stagger: 0.1,
+                opacity: 0,
+                ease: "power4.inOut",
 
-      projects.from(
-        ".project",
-        {
-          x: -50,
-          stagger: 0.1,
-          opacity: 0,
-          ease: "power4.inOut",
-          // onStart: () => makeBlack(),
-          onRepeatverseComplete: () => makeBlack(),
-        },
-        "-=1.5"
-      );
+            });
 
-      //   ------------------------------END PROJECTS-----------------------------------
+        // -------------------------END LANDING ANIMATION------------------------------
 
-      let tl3 = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#dinoGame",
-          toggleActions: "play none none pause",
-          scrub: 1,
-          start: "top bottom",
-          // pin: true,
-        },
-      });
+        //-------------------------------ABOUT------------------------------------
+        let about = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#aboutDinoGame",
+                toggleActions: "play none none pause",
+                scrub: 1,
+                start: "top bottom",
+                // pin: true,
+            },
+        });
 
-      tl3
-        .from(
-          "#dinoGame",
-          {
-            opacity: 0,
-            scale: 0,
-            onComplete: () => makeYellow(),
-            onReverseComplete: () => makeBlack(),
-          },
-          "-=5"
+
+
+
+        about
+            .from("#aboutDinoGame", { opacity: 0, scale: 0 }, "-=0.5").to(
+                ".saneDino",
+                {
+                    x: 500,
+                    duration: 1,
+
+                },
+                "-=0.5"
+            )
+            .to('body', { backgroundColor: "#fbbf24", color: "black" })
+
+        //-------------------------------END ABOUT------------------------------------
+
+        //   ------------------------------PROJECTS-----------------------------------
+        let projects = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#projects",
+                toggleActions: "play none none pause",
+                scrub: 1,
+                start: "top bottom",
+                // pin: true,
+            },
+        });
+
+        projects.from(
+            ".project",
+            {
+                x: -50,
+                stagger: 0.1,
+                opacity: 0,
+                ease: "power4.inOut",
+                // onStart: () => makeBlack(),
+                // onReverseComplete: () => makeBlack(),
+            },
+            "-=1.5"
         )
-        .to(".cactus", { x: 900, duration: 2 });
 
-      // if (!isMobile) {
-      //     tl.from('.left', { x: 200, stagger: 0.1, })
-      //         .from('.right', { x: -200, stagger: 0.1 }, '-=1')
+        let sikePacman = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#psychPacman",
+                toggleActions: "play none none pause",
+                scrub: 1,
+                start: "top center",
+                // pin: true,
+            },
+        });
 
-      // } else {
-      //     tl.from('.left', { y: 200, stagger: 0.1, })
-      //         .from('.right', { y: -200, stagger: 0.1 }, '-=1')
 
-      // }
+        sikePacman
+            .to(
+                ".sikePacman",
+                {
+                    y: 500,
+                    duration: 2
+
+                },
+                "-=0.5"
+            )
+            .to('.dot2', { opacity: 0, stagger: 0.5, }, '-=1.5')
+            .to('body', { backgroundColor: "black", color: "#fbbf24" })
+        //   ------------------------------END PROJECTS-----------------------------------
+        //   ------------------------------TESTIMONIALS-----------------------------------
+        let testi = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#testimonials",
+                toggleActions: "play none none pause",
+                scrub: 1,
+                start: "top bottom",
+                // pin: true,
+            },
+        });
+
+        testi.from('.testimonial', { opacity: 0, stagger: 0.1, x: -50 })
+
+
+
+
+
+        let tl3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#dinoGame",
+                toggleActions: "play none none pause",
+                scrub: 1,
+                start: "top bottom",
+                // pin: true,
+            },
+        });
+
+        tl3
+            .from(
+                "#dinoGame",
+                {
+                    opacity: 0,
+                    scale: 0,
+
+                },
+                "-=5"
+            )
+            .to(".cactus", { x: 900, duration: 2 });
+
+        //   ------------------------------TESTIMONIALS-----------------------------------
+
+        // ------------------------------------------CONTACT----------------------------------
+        let contact = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#contactMe",
+                toggleActions: "play none none pause",
+                // scrub: 1,
+                start: "top bottom",
+                // pin: true,
+            },
+        });
+
+        contact.from('.contact', { x: -50, opacity: 0, stagger: 0.1 }, '+=1')
+        // ---------------------------------------------CONTACT-------------------------------------
+
+        // if (!isMobile) {
+        //     tl.from('.left', { x: 200, stagger: 0.1, })
+        //         .from('.right', { x: -200, stagger: 0.1 }, '-=1')
+
+        // } else {
+        //     tl.from('.left', { y: 200, stagger: 0.1, })
+        //         .from('.right', { y: -200, stagger: 0.1 }, '-=1')
+
+        // }
     </script>
-  </body>
+</body>
+
 </html>
