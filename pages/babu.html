@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babu Vittal Portfolio Case Study</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet" />
+</head>
+
+<style>
+    body {
+        font-family: Poppins;
+    }
+
+</style>
+
+<body class="bg-black text-white px-4">
+
+    <section class="py-32 px-4 md:px-24 py-32 bg-yellow-400 text-black">
+        <h1 class="text-right pixelated uppercase text-3xl md:text-7xl ">Babu Vittal's Portfolio Website</h1>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-32 md:flex md:space-x-12">
+
+        <div class="space-y-32 flex flex-wrap">
+            <div class="">
+                <p class="text-2xl md:text-4xl bigBoy uppercase text-left md:text-right">Introduction </p>
+                <p class="text-lg max-w-lg mt-12 text-gray-500 text-left md:text-right mb-12">Babu Vittal wanted a
+                    simple
+                    website to showcase his work and experience, a link that he can share with a potential client.</p>
+
+                <a href="https://babuvittal.com/" class="hover:underline flex md:items-center md:justify-end space-x-4"
+                    target="_blank">
+                    <div class="text-yellow"> Go to website</div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="fill-current h-6 transform -rotate-45 text-yellow-400" viewBox="0 0 24 24">
+                        <path
+                            d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="">
+                <p class="text-2xl md:text-4xl bigBoy uppercase text-left md:text-right">Design </p>
+                <p class="text-lg max-w-lg mt-12 text-gray-500 text-left md:text-right mb-12">I chose a dark color
+                    pallette and a contrasting yellow as a higlighting color. The layout was simple and navigation items
+                    held a higher priority on the landing page.</p>
+            </div>
+
+
+        </div>
+        <div class="py-12 md:py-0">
+            <img src="/images/babu_vittal.png" class=" border-4 p-4 border-yellow-400" alt="">
+            <!-- <iframe src="https://babuvittal.com/" class="w-full h-screen" frameborder="0"></iframe> -->
+        </div>
+    </section>
+
+    <section class="px-4 md:px-24 py-32" id="dino">
+        <p class="text-yellow-400 text-center text-3xl pixelated hidden" id="gameOver">game over</p>
+        <div class="flex justify-between" id="aboutDinoGame">
+            <img src="/images/dino_yellow-01.svg" class="h-20 md:h-32 saneDino" alt="" />
+            <div class="flex">
+                <img src="/images/saneCactus1-02.svg" class="h-20 md:h-32 " alt="" />
+                <img src="/images/saneCactus2-02.svg" class="h-20 md:h-32" alt="" />
+            </div>
+        </div>
+
+        <div class="h-px w-full bg-yellow-400"></div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script>
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        function gameover() {
+            document.getElementById("gameOver").classList.toggle("hidden")
+
+        }
+        let dino = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#dino",
+                toggleActions: "play none none pause",
+                start: "top bottom",
+                // pin: true
+            },
+        });
+
+        if (isMobile) {
+            dino.to('.saneDino', { x: 135, duration: 3, onComplete: () => gameover() })
+        } else {
+            dino.to('.saneDino', { x: 1399, duration: 3, onComplete: () => gameover() })
+        }
+
+    </script>
+
+
+</body>
+
+</html>

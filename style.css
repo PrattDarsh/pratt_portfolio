@@ -1,0 +1,44 @@
+@font-face {
+    font-family: bigFont;
+    src: url(Druk-Wide-Bold.ttf);
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(PublicPixel-z84yD.ttf);
+}
+
+
+.pixelated{
+    font-family: pixel;
+}
+
+body {
+    font-family: Poppins;
+}
+
+.bigBoy {
+    font-family: bigFont;
+}
+
+.round {
+    border-radius: 72px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 20px;
+}
+
+.title {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.cursive {
+    font-family: "Smooch", cursive;
+}
